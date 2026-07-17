@@ -1,9 +1,5 @@
 /* ==========================================================
    PROJECT DATA
-   Edit this array with your real projects.
-   category: "dev" or "design"  → controls color and filter
-   link: paste the direct URL to the project's Behance case study
-         (or any other live link). Leave "#" until you have one.
    ========================================================== */
 const projects = [
   {
