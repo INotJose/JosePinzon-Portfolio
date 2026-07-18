@@ -1,5 +1,5 @@
 /* ==========================================================
-   Paleta Beyond Light
+   TOKENS — paleta "Beyond Light"
    ========================================================== */
 :root {
   /* Color */
@@ -158,7 +158,27 @@ code {
 }
 @keyframes blink { 50% { opacity: 0; } }
 
-.hero__role { margin: 0 0 26px; display: flex; gap: 10px; flex-wrap: wrap; }
+.hero__role {
+  margin: 0 0 26px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--primary);
+  min-height: 24px; /* reserves space so layout doesn't jump while typing */
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* .tag / .tag--dev / .tag--design: no longer used in the hero (replaced by
+   the typewriter line), kept here in case you want badge-style labels
+   elsewhere later. */
 .tag {
   font-family: var(--font-mono);
   font-size: 14px;
@@ -174,6 +194,7 @@ code {
   color: var(--muted);
   font-size: 17px;
   margin: 0 0 40px;
+  min-height: 84px; /* ~3 lines, reserved so layout doesn't jump while typing */
 }
 .hero__lede strong { color: var(--text); font-weight: 600; }
 
