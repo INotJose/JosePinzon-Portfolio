@@ -1,5 +1,9 @@
 /* ==========================================================
    PROJECT DATA
+   Edit this array with your real projects.
+   category: "dev" or "design"  → controls color and filter
+   link: paste the direct URL to the project's Behance case study
+         (or any other live link). Leave "#" until you have one.
    ========================================================== */
 const projects = [
   {
@@ -62,5 +66,109 @@ function initFilters() {
 /* ============ FOOTER YEAR ============ */
 document.querySelector(".footer__year").textContent = new Date().getFullYear();
 
+/* ============ HERO TYPEWRITER ============
+   Types each role once, left to right, no loop. On the last role it
+   stops mid-string-complete and leaves the CSS-blinking .caret sitting
+   right after it. Respects prefers-reduced-motion. */
+function initTypewriter(onDone) {
+  const el = document.getElementById("typewriter");
+  if (!el) return;
+
+  const roles = [
+    "HTML Integrator",
+    "UI/UX Designer",
+    "Salesforce Marketing Cloud Developer",
+  ];
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) {
+    el.textContent = roles[roles.length - 1];
+    if (typeof onDone === "function") onDone();
+    return;
+  }
+
+  const TYPE_SPEED = 45;   // ms per character while typing
+  const ERASE_SPEED = 25;  // ms per character while erasing
+  const HOLD_TIME = 1100;  // ms pause after a role is fully typed, before erasing
+
+  let roleIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    const current = roles[roleIndex];
+    const isLastRole = roleIndex === roles.length - 1;
+
+    if (charIndex <= current.length) {
+      el.textContent = current.slice(0, charIndex);
+      charIndex++;
+      setTimeout(type, TYPE_SPEED);
+      return;
+    }
+
+    if (isLastRole) {
+      if (typeof onDone === "function") onDone(); // hand off to the lede typewriter
+      return; // done for good — caret keeps blinking via CSS
+    }
+    setTimeout(erase, HOLD_TIME);
+  }
+
+  function erase() {
+    const current = roles[roleIndex];
+    if (charIndex >= 0) {
+      el.textContent = current.slice(0, charIndex);
+      charIndex--;
+      setTimeout(erase, ERASE_SPEED);
+      return;
+    }
+    roleIndex++;
+    charIndex = 0;
+    setTimeout(type, TYPE_SPEED);
+  }
+
+  type();
+}
+
+/* ============ LEDE TYPEWRITER ============
+   Types the bio paragraph once, left to right, no loop. Runs the three
+   segments (plain / <strong> / plain) in order so the bold emphasis on
+   "Salesforce Marketing Cloud" survives the animation. Starts only after
+   the role typewriter above has finished (passed in as onDone). */
+function initLedeTypewriter() {
+  const parts = document.querySelectorAll(".hero__lede .lede-part");
+  if (!parts.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return; // text is already fully visible in the HTML
+
+  const SPEED = 14; // ms per character — faster than the role typewriter, it's a longer text
+
+  const fullTexts = Array.from(parts).map((el) => el.textContent);
+  parts.forEach((el) => { el.textContent = ""; });
+
+  let partIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (partIndex >= parts.length) return; // done for good, no loop
+
+    const el = parts[partIndex];
+    const text = fullTexts[partIndex];
+
+    if (charIndex <= text.length) {
+      el.textContent = text.slice(0, charIndex);
+      charIndex++;
+      setTimeout(type, SPEED);
+      return;
+    }
+
+    partIndex++;
+    charIndex = 0;
+    setTimeout(type, SPEED);
+  }
+
+  type();
+}
+
 renderProjects();
 initFilters();
+initTypewriter(initLedeTypewriter);
