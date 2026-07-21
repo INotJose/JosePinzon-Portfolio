@@ -170,9 +170,9 @@ code {
 }
 .tag--dev { color: var(--primary); border-color: color-mix(in srgb, var(--primary) 40%, var(--border)); }
 .tag--design { color: var(--secondary-text); border-color: color-mix(in srgb, var(--secondary) 45%, var(--border)); }
-.tag--D3 { color: var(--accent-3); border-color: color-mix(in srgb, var(--accent-3) 40%, var(--border)); }
+/*.tag--D3 { color: var(--accent-3); border-color: color-mix(in srgb, var(--accent-3) 40%, var(--border)); }
 .tag--motionG { color: var(--accent-4-text); border-color: color-mix(in srgb, var(--accent-4) 45%, var(--border)); }
-
+*/
 .hero__lede {
   max-width: 560px;
   color: var(--muted);
