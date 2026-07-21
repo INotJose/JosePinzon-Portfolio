@@ -6,13 +6,13 @@ const projects = [
     title: "Salesforce Email Developer — Freelance",
     category: "dev",
     desc: "Responsive email templates in Salesforce Marketing Cloud, AMPscript personalization, audience segmentation and cross-device QA. 2025–Present.",
-    
+    link: "https://inotjose.github.io/Ampscript-portfolio-/Car_email.html",    
   },
   {
     title: "Front-End Developer / UI Designer — Grownet App",
     category: "dev",
     desc: "Web and mobile layouts for a supplier-management platform used by teams in London, applying UI/UX principles and front-end implementation. 2023–2024.",
-    link: "#",
+    link: "https://www.grownetapp.com/",
   },
   {
     title: "UI/UX Designer & Web Developer — Creative Jungle",
@@ -24,7 +24,7 @@ const projects = [
     title: "Brand identity — [Nombre del proyecto]",
     category: "D3",
     desc: "Ejemplo de card en la nueva categoría — reemplaza este objeto con tu proyecto real, o bórralo si no lo necesitas todavía.",
-    link: "#",
+    link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
   },
 ];
 
