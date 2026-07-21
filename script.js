@@ -21,10 +21,16 @@ const projects = [
     link: "#",
   },
    {
-    title: "Brand identity — [Nombre del proyecto]",
+    title: "3D Hyundai-N-Vision-74 Visualization — Personal Project",
     category: "D3",
-    desc: "Ejemplo de card en la nueva categoría — reemplaza este objeto con tu proyecto real, o bórralo si no lo necesitas todavía.",
+    desc: "Full 3D pipeline in Blender — vehicle modeling from scratch, custom PBR shaders and materials, lighting and rendering, edited into a final showcase video.",
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
+  },
+   {
+    title: "4ta",
+    category: "motionGraphics",
+    desc: "text",
+    link: "#",
   },
 ];
 
@@ -33,7 +39,8 @@ const grid = document.getElementById("projectGrid");
 const categoryLabels = {
   dev: "Development",
   design: "Design",
-  D3: "3D Desing",
+  D3: "3D Desing",  
+  motionGraphics: "Motion Graphics",
 };
 
 function renderProjects() {
