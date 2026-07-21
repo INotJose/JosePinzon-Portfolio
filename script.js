@@ -20,9 +20,21 @@ const projects = [
     desc: "End-to-end UI/UX process — research, wireframes and prototyping through final implementation — across 9 client web projects. 2022–2023.",
     link: "#",
   },
+   {
+    title: "Brand identity — [Nombre del proyecto]",
+    category: "D3",
+    desc: "Ejemplo de card en la nueva categoría — reemplaza este objeto con tu proyecto real, o bórralo si no lo necesitas todavía.",
+    link: "#",
+  },
 ];
 
 const grid = document.getElementById("projectGrid");
+
+const categoryLabels = {
+  dev: "Development",
+  design: "Design",
+  D3: "3D Desing",
+};
 
 function renderProjects() {
   grid.innerHTML = projects
