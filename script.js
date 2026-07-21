@@ -28,7 +28,7 @@ const projects = [
   },
    {
     title: "4ta",
-    category: "motionGraphics",
+    category: "motionG",
     desc: "text",
     link: "#",
   },
@@ -40,7 +40,7 @@ const categoryLabels = {
   dev: "Development",
   design: "Design",
   D3: "3D Desing",  
-  motionGraphics: "Motion Graphics",
+  motionG: "Motion Graphics",
 };
 
 function renderProjects() {
