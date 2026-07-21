@@ -6,7 +6,8 @@ const projects = [
     title: "Salesforce Email Developer — Freelance",
     category: "dev",
     desc: "Responsive email templates in Salesforce Marketing Cloud, AMPscript personalization, audience segmentation and cross-device QA. 2025–Present.",
-    link: "https://inotjose.github.io/Ampscript-portfolio-/Car_email.html",    
+    link: "https://inotjose.github.io/Ampscript-portfolio-/Car_email.html", 
+    linkText: "View on git →",
   },
   {
     title: "Front-End Developer / UI Designer — Grownet App",
