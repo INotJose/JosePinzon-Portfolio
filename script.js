@@ -1,16 +1,12 @@
 /* ==========================================================
    PROJECT DATA
-   Edit this array with your real projects.
-   category: "dev" or "design"  → controls color and filter
-   link: paste the direct URL to the project's Behance case study
-         (or any other live link). Leave "#" until you have one.
    ========================================================== */
 const projects = [
   {
     title: "Salesforce Email Developer — Freelance",
     category: "dev",
     desc: "Responsive email templates in Salesforce Marketing Cloud, AMPscript personalization, audience segmentation and cross-device QA. 2025–Present.",
-    link: "#",
+    
   },
   {
     title: "Front-End Developer / UI Designer — Grownet App",
