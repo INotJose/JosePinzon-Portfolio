@@ -23,13 +23,13 @@ const projects = [
   },
    {
     title: "3D Hyundai-N-Vision-74 Visualization — Personal Project",
-    category: "D3",
+    category: "3d",
     desc: "Full 3D pipeline in Blender — vehicle modeling from scratch, custom PBR shaders and materials, lighting and rendering, edited into a final showcase video.",
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
   },
    {
     title: "4ta",
-    category: "motionG",
+    category: "motion",
     desc: "text",
     link: "#",
   },
