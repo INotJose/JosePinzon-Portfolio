@@ -41,7 +41,7 @@ const categoryLabels = {
   dev: "Development",
   design: "Design",
   3d: "Art 3D",  
-  motionG: "Motion Graphics",
+  motion: "Motion Graphics",
 };
 
 function renderProjects() {
