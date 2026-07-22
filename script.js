@@ -52,7 +52,7 @@ function renderProjects() {
         <p class="card__cat">${p.category === "dev" ? "Development" : "Design"}</p>
         <h3 class="card__title">${p.title}</h3>
         <p class="card__desc">${p.desc}</p>
-        <a class="card__link" href="${p.link}" target="_blank" rel="noopener">View on Behance →</a>
+        <a class="card__link" href="${p.link}" target="_blank" rel="noopener">${p.linkText ?? "View on Behance →"}</a>
       </article>`
     )
     .join("");
