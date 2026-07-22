@@ -40,7 +40,7 @@ const grid = document.getElementById("projectGrid");
 const categoryLabels = {
   dev: "Development",
   design: "Design",
-  D3: "3D Desing",  
+  3d: "Art 3D",  
   motionG: "Motion Graphics",
 };
 
