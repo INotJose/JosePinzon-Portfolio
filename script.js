@@ -40,7 +40,7 @@ const grid = document.getElementById("projectGrid");
 const categoryLabels = {
   dev: "Development",
   design: "Design",
-  3d: "Art 3D",  
+  "3d": "Art 3D",  
   motion: "Motion Graphics",
 };
 
@@ -49,7 +49,7 @@ function renderProjects() {
     .map(
       (p) => `
       <article class="card" data-cat="${p.category}">
-        <p class="card__cat">${p.category === "dev" ? "Development" : "Design"}</p>
+        <p class="card__cat">${categoryLabels[p.category] ?? p.category}</p>
         <h3 class="card__title">${p.title}</h3>
         <p class="card__desc">${p.desc}</p>
         <a class="card__link" href="${p.link}" target="_blank" rel="noopener">${p.linkText ?? "View on Behance →"}</a>
