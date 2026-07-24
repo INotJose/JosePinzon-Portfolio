@@ -14,12 +14,14 @@ const projects = [
     category: "dev",
     desc: "Web and mobile layouts for a supplier-management platform used by teams in London, applying UI/UX principles and front-end implementation. 2023–2024.",
     link: "https://www.grownetapp.com/",
+     linkText: "View Online →",
   },
   {
     title: "UI/UX Designer & Web Developer — Creative Jungle",
     category: "design",
     desc: "End-to-end UI/UX process — research, wireframes and prototyping through final implementation — across 9 client web projects. 2022–2023.",
-    link: "#",
+    link: "https://www.foodpointproduce.co.uk/about/how-it-started",
+     linkText: "View Online →",
   },
    {
     title: "3D Hyundai-N-Vision-74 Visualization — Personal Project",
@@ -28,10 +30,10 @@ const projects = [
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
   },
    {
-    title: "4ta",
+    title: "Cosmic Tails",
     category: "motion",
-    desc: "text",
-    link: "#",
+    desc: "Research, wireframes and prototyping through final implementation to final export, for animal web desing clearly and engagingly. 2025.",
+    link: "https://www.behance.net/gallery/245573651/Cosmic-Tails",
   },
 ];
 
