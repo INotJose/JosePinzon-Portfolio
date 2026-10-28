@@ -420,3 +420,46 @@ code {
   .hero { padding: 60px 20px 80px; }
   .about, .projects, .toolkit, .contact { padding: 44px 20px; }
 }
+
+/* ==========================================================
+   AJUSTES RESPONSIVE (celular)
+   Bloque agregado al final — no modifica nada de lo anterior.
+   ========================================================== */
+
+/* 1) Filtros: que los botones puedan saltar a una segunda línea
+      en vez de desbordar la pantalla. No afecta el escritorio. */
+.filters { flex-wrap: wrap; }
+
+/* 2) Email de contacto: nunca más ancho que la pantalla */
+.contact__email {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  /* Email un poco más chico en celular para que quepa en una línea */
+  .contact__email { font-size: clamp(20px, 6vw, 28px); }
+
+  /* Alinear nav y footer con el resto de secciones (20px) */
+  .nav { padding: 20px; }
+  .footer { padding: 24px 20px 40px; }
+
+  /* Títulos de sección un poco más compactos */
+  .about__label h2, .projects h2, .toolkit h2, .contact h2 { font-size: 24px; }
+
+  /* Botones del hero: ocupar el ancho completo, más fáciles de tocar */
+  .hero__actions { flex-wrap: wrap; }
+  .hero__actions .btn { flex: 1 1 140px; text-align: center; }
+
+  /* Enlaces de "About" y redes de contacto: que bajen de línea si no caben */
+  .about__links { flex-wrap: wrap; gap: 14px 22px; }
+
+  /* Filtros: botones un poco más compactos */
+  .filter { padding: 7px 13px; }
+}
+
+/* Pantallas muy angostas (≤ 360px) */
+@media (max-width: 360px) {
+  .nav__links { gap: 12px; font-size: 11px; }
+  .hero__title { font-size: 38px; }
+}
