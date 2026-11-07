@@ -61,7 +61,7 @@ const projects = [
     linkText: "View full on →",
      media: {
     type: "image",
-    src: "Resources/projects/cosmic-tails.jpg",
+    src: "Resources/projects/FrameHV75.png",
     alt: "Hyundai N Vision 74"
          },
   },
