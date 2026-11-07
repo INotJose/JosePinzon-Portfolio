@@ -38,6 +38,11 @@ const projects = [
     category: "design",
     desc: "Research, wireframes and prototyping through final implementation and export, for an animal-themed website that is clear and engaging. 2025.",
     link: "https://www.behance.net/gallery/245573651/Cosmic-Tails",
+       media: {
+    type: "image",
+    src: "Resources/FrameCT.png",
+    alt: "Hyundai N Vision 74"
+         },
   },
   {
     title: "UX/UI Desing & Web - Grownet Web",
@@ -54,9 +59,9 @@ const projects = [
     linkText: "View case →",
   },
   {
-    title: "Motion Project 01 — EDIT TITLE",
+    title: "Hyundai N Vision 74",
     category: "motion",
-    desc: "EDIT: concept, your role, tools (After Effects...) and result.",
+    desc: "Automotive promotional video showcasing the vehicle from multiple angles through dynamic camera movements, motion graphics, and visual storytelling to create an engaging advertising experience.",
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
     linkText: "View full on →",
      media: {
