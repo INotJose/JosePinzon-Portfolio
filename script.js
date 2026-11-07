@@ -41,7 +41,7 @@ const projects = [
        media: {
     type: "image",
     src: "Resources/FrameCT.png",
-    alt: "Hyundai N Vision 74"
+    alt: "Pets"
          },
   },
   {
@@ -57,6 +57,11 @@ const projects = [
     desc: "Redesigning the insurance enrollment experience within a mobile banking app, creating a more intuitive and engaging user journey to reduce process abandonment and increase insurance conversion rates.",
     link: "https://www.behance.net/gallery/234206507/Prueba-Tcnica-SBS",
     linkText: "View case →",
+     media: {
+    type: "image",
+    src: "Resources/FrameChalenge.png",
+    alt: "UX/UI Challenge"
+         },
   },
   {
     title: "Hyundai N Vision 74",
