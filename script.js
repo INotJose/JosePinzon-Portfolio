@@ -59,6 +59,10 @@ const projects = [
     desc: "EDIT: concept, your role, tools (After Effects...) and result.",
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
     linkText: "View full on →",
+     media: {
+    type: "video",
+    src: "Resources/hero-video.mp4",
+    alt: "Hyundai N Vision 74"
   },
   {
     title: "Motion Project 02 — EDIT TITLE",
