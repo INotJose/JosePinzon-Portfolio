@@ -63,6 +63,7 @@ const projects = [
     type: "video",
     src: "Resources/hero-video.mp4",
     alt: "Hyundai N Vision 74"
+         },
   },
   {
     title: "Motion Project 02 — EDIT TITLE",
