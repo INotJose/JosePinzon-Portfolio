@@ -19,6 +19,7 @@ const projects = [
     desc: "Web and mobile layouts for a supplier-management platform used by teams in London, applying UI/UX principles and front-end implementation. 2023–2024.",
     link: "https://www.grownetapp.com/",
      linkText: "View Online →",
+     
   },
   {
     title: "UI/UX Designer & Web Developer — Creative Jungle",
@@ -26,12 +27,22 @@ const projects = [
     desc: "End-to-end UI/UX process — research, wireframes and prototyping through final implementation — across 9 client web projects. 2022–2023.",
     link: "https://www.foodpointproduce.co.uk/about/how-it-started",
      linkText: "View Online →",
+     media: {
+    type: "image",
+    src: "Resources/FrameFP.png",
+    alt: "FoodPoint Web"
+         },
   },
    {
     title: "3D Hyundai-N-Vision-74 Visualization — Personal Project",
     category: "3d",
     desc: "Full 3D pipeline in Blender — vehicle modeling from scratch, custom PBR shaders and materials, lighting and rendering, edited into a final showcase video.",
     link: "https://www.behance.net/gallery/210028635/Hyundai-N-Vision-74",
+      media: {
+    type: "image",
+    src: "Resources/FrameHyundai.png",
+    alt: "Car Hyundai Vision 74"
+         },
   },
    {
     title: "Cosmic Tails",
@@ -50,6 +61,11 @@ const projects = [
     desc: "UX/UI design and motion graphics for GrowNet, translating concepts into website wireframes, intuitive user interfaces, and a fully implemented web experience. 2023-2024",
     link: "https://www.grownetapp.com/",
     linkText: "View Online →",
+     media: {
+    type: "image",
+    src: "Resources/FrameG.png",
+    alt: "Grownet Web"
+         },
   },
   {
     title: "UX/UI Challenge — Seguros SBS",
@@ -76,19 +92,24 @@ const projects = [
          },
   },
   {
-    title: "Motion Project 02 — EDIT TITLE",
+    title: "Motion Project Squigly",
     category: "motion",
-    desc: "EDIT: concept, your role, tools (After Effects...) and result.",
-    link: "https://www.behance.net/josepinzn1",
+    desc: "3D character creation and rendering, including modeling, material and shader development, rigging, pose composition, and lighting to achieve a polished and visually engaging final result.",
+    link: "https://www.behance.net/gallery/178866305/SkullGirls-Squigly-shaders",
     linkText: "View on Behance →",
+     media: {
+    type: "image",
+    src: "Resources/FrameLP.png",
+    alt: "La Perla"
+         },
   },
-  {
+  /*{
     title: "Motion Project 03 — EDIT TITLE",
     category: "motion",
     desc: "EDIT: concept, your role, tools (After Effects...) and result.",
     link: "https://www.behance.net/josepinzn1",
     linkText: "View on Behance →",
-  },
+  },*/
 ];
 
 const grid = document.getElementById("projectGrid");
