@@ -59,7 +59,7 @@ const projects = [
     linkText: "View case →",
      media: {
     type: "image",
-    src: "Resources/FrameChalenge.png",
+    src: "Resources/Frame Challenge.png",
     alt: "UX/UI Challenge"
          },
   },
